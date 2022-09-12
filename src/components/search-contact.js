@@ -26,7 +26,7 @@ import LoadingContainer from "./loading-container";
 const columns = [
   { id: "id", label: "ID", minWidth: 40 },
   { id: "name", label: "Name", minWidth: 40 },
-  { id: "email", label: "Email", minWidth: 40 },
+  //{ id: "email", label: "Email", minWidth: 40 },
 ];
 
 function TableHeader(props) {
@@ -66,7 +66,7 @@ function TableHeader(props) {
 }
 
 export default function SearchContact(props) {
-  const { setValue } = useProvider();
+  const { setContactData } = useProvider();
   const [rowdata, setRowdata] = useState();
   const [showdata, setShowdata] = useState([
     {
@@ -195,7 +195,7 @@ export default function SearchContact(props) {
     }
   };
   const handleTap = (params) => {
-    console.log(params);
+    setContactData(params);
   };
   if (loading) {
     return <LoadingContainer />;
@@ -234,17 +234,14 @@ export default function SearchContact(props) {
             </Grid>
           </Grid>
         </Container>
-        <Grid
-          container
-          justifyContent="center"
-          className={styles.contactContainer}
-        >
-          <Paper sx={{ width: "100%", overflow: "hidden" }} elevation={3}>
+
+        <Grid container justifyContent="center">
+          <Paper sx={{ width: "100%" }} elevation={3}>
             <TableContainer
               component={Paper}
               sx={{ maxHeight: 440, minHeight: 240 }}
             >
-              <Table stickyHeader={true} >
+              <Table stickyHeader={true}>
                 <TableHeader
                   order={order}
                   orderBy={orderBy}

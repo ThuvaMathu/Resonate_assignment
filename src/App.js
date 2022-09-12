@@ -4,7 +4,9 @@ import TopAppBar from "./components/top-app-bar";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#fec64b", minHeight: "100vh" }}>
+    <div
+      style={{ backgroundColor: "#fec64b", minHeight: "100vh", height: "100%" }}
+    >
       <TopAppBar />
       <Main />
     </div>

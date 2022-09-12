@@ -40,7 +40,7 @@ export default function Main() {
               container
               justifyContent="center"
               alignItems="center"
-              sx={{ overflow: "auto", height: "100%" }}
+              sx={{ overflow: "auto",}}
             >
               <ContactInfo />
             </Grid>

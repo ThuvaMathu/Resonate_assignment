@@ -20,7 +20,7 @@ export default function ContactInfo() {
           >
             {contactData.name}
           </Typography>
-          <Card sx={{ minWidth: 350 }}>
+          <Card sx={{ maxWidth: 500 }}>
             <CardContent>
               <Typography sx={{ fontSize: 18 }} gutterBottom>
                 <span style={{ fontWeight: "bold" }}>Username: </span>

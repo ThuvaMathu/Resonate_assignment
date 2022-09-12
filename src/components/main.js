@@ -8,7 +8,7 @@ import ContactInfo from "./contact-info";
 export default function Main() {
   return (
     <AppProvider>
-      <Box sx={{ flexGrow: 1, p: 3, marginY: 5 }}>
+      <Box sx={{ flexGrow: 1, p: 3 }}>
         <Grid
           container
           spacing={2}

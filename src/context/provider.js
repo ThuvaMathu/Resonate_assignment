@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState } from "react";
 
-const AppContext = createContext();
+const AppContext = createContext(null);
 
 const AppProvider = ({ children }) => {
-  const [value, setValue] = useState();
+  const [contactData, setContactData] = useState();
   return (
     <AppContext.Provider
       value={{
-        value,
-        setValue,
+        contactData,
+        setContactData,
       }}
     >
       {children}

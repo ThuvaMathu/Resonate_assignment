@@ -8,7 +8,6 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import { useProvider } from "../context/provider";
-import styles from "./style.module.css";
 import {
   Container,
   Grid,
@@ -94,7 +93,7 @@ export default function SearchContact(props) {
     },
   ]);
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("symbol");
+  const [orderBy, setOrderBy] = React.useState("id");
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -260,7 +259,7 @@ export default function SearchContact(props) {
                           <StyledTableRow
                             hover
                             tabIndex={-1}
-                            key={row.symbol}
+                            key={row.id}
                             onClick={() => handleTap(row)}
                           >
                             {columns.map((column) => {

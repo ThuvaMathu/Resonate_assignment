@@ -1,49 +1,8 @@
-// import React from "react";
-// import Box from "@mui/material/Box";
-// import Grid from "@mui/material/Unstable_Grid2";
-// import AppProvider from "../context/provider";
-// import SearchContact from "./search-contact";
-// export default function Main() {
-//   return (
-//     <>
-//       <AppProvider>
-//         <Grid container justifyContent="center" alignContent="center">
-//           <Grid item>
-//             <Box
-//               sx={{
-//                 padding: 3,
-//                 flexGrow: 1,
-//                 justifyContent: "center",
-//                 alignContent: "center",
-//               }}
-//             >
-//               <SearchContact />
-//             </Box>
-//           </Grid>
-//           <Grid item>
-//             <Box
-//               sx={{
-//                 padding: 3,
-//                 // flexGrow: 1,
-//                 justifyContent: "center",
-//                 alignContent: "center",
-//               }}
-//             >
-//               <SearchContact />
-//             </Box>
-//           </Grid>
-
-//         </Grid>
-//       </AppProvider>
-//     </>
-//   );
-// }
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import SearchContact from "./search-contact";
 import AppProvider from "../context/provider";
-import { Container } from "@mui/system";
 import ContactInfo from "./contact-info";
 
 export default function Main() {
